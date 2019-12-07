@@ -58,6 +58,8 @@ https://www.nicovideo.jp/watch/sm19453784
 ‚ ‚Æ‚Í scale.fx‚Ìê‡‚Æ“¯—l‚Å‚·B
 Main, MaterialMap, SSAOMap, PSSM1`4 ‚Ìƒ^ƒu‚Å•ª‰ðƒGƒtƒFƒNƒg‚ð“K—p‚µ‚½‚¢ƒ‚ƒfƒ‹‚É‘Î‚µ‚Ä "_fracture.fx" ‚ÅI‚í‚éƒGƒtƒFƒNƒg‚ðŠ„‚è“–‚Ä‚Ä‚­‚¾‚³‚¢B
 
+¦ –{‰Æ‚Ì•ª‰ðƒGƒtƒFƒNƒg‚É‚Í”j•Ð‚ðƒtƒF[ƒhƒAƒEƒg‚³‚¹‚é‹@”\‚ª‚ ‚è‚Ü‚·‚ªA‚±‚ÌƒGƒtƒFƒNƒg‚Å‚Í‘Î‰ž‚µ‚Ä‚¢‚Ü‚¹‚ñB
+
 
 •ª‰ðƒGƒtƒFƒNƒg—pƒ}ƒeƒŠƒAƒ‹‚Ìì‚è•û
 ----------------------------------
@@ -86,5 +88,6 @@ Ray-MMD –{‘Ì‚¨‚æ‚ÑŽ„‚ªC³‚µ‚½•”•ª‚ÉŠÖ‚µ‚Ä‚Í MIT License ‚Ì‰º‚É”z•z‚³‚ê‚Ä‚¢‚Ü‚·
 * 2019-12-07 rev.2
     * •ª‰ðƒGƒtƒFƒNƒg‚Ì‹@”\‚ðŽÀ‘•‚µ‚Ü‚µ‚½B
     * “¯«‚·‚é ray-mmd ‚Ìƒo[ƒWƒ‡ƒ“‚ð master ƒuƒ‰ƒ“ƒ`‚ÌÅV”Å‚É‚µ‚Ü‚µ‚½B
+      ‚Ü‚½AExtensions ‚ð“¯«‚·‚é‚æ‚¤‚É‚µ‚Ü‚µ‚½B
 * 2019-11-10 rev.1
     * ŒöŠJ
