@@ -1,5 +1,5 @@
 ====================================
-   Scale.fx ‘Î‰ž”Å Ray-MMD (rev.3)
+   Scale.fx ‘Î‰ž”Å Ray-MMD (rev.4)
 
         by iori_komatsu
 ====================================
@@ -12,7 +12,9 @@ ScaleControl ‚ðŽg‚Á‚Äƒ‚ƒfƒ‹‚ðŠg‘åEk¬‚Å‚«‚Ü‚·B
 * Ray-MMD (by Ray-MMD Developers): https://github.com/ray-cast/ray-mmd
 * Scale.fx (by j‹àP): https://harigane.at.webry.info/201010/article_1.html
 
-‚Ü‚½Arev.2 ‚©‚ç‚Í‚Ç‚é‚éPŽ‚Ìu˜A‘±–Ê–ˆ‚É•ª‰ðƒGƒtƒFƒNƒgv‚ª“®ì‚·‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+‚Ü‚½Arev.2 ‚©‚ç‚ÍA‚í‚½‚èŽ‚Æ‚Ç‚é‚éPŽ‚Ìu˜A‘±–Ê–ˆ‚É•ª‰ðƒGƒtƒFƒNƒgv‚ª“®ì‚·‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
+˜A‘±–Ê–ˆ‚É•ª‰ðƒGƒtƒFƒNƒg‚Æ‚ÍAˆÈ‰º‚Ì“®‰æ‚ÅÐ‰î‚³‚ê‚Ä‚¢‚éƒGƒtƒFƒNƒg‚Å‚·B
+https://www.nicovideo.jp/watch/sm19453784
 
 
 Žg‚¢•û
@@ -25,8 +27,10 @@ ScaleControl ‚ðŽg‚Á‚Äƒ‚ƒfƒ‹‚ðŠg‘åEk¬‚Å‚«‚Ü‚·B
 Main ƒ^ƒu‚Ì main.fx ‚Í main_scale.fx ‚É•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
 “¯—l‚É‚µ‚Ä SSAOMap ‚â PSSM1`4 ‚àŠ„‚è“–‚Ä‚ð•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
 
-ÅŒã‚É ScaleControl.pmd ‚ð MMD ‚É“Ç‚Ýž‚ß‚ÎAƒZƒbƒgƒAƒbƒv‚ÍŠ®—¹‚Å‚·B
+ÅŒã‚É Scale_v005/ScaleControl.pmd ‚ðMMD‚É“Ç‚Ýž‚ß‚ÎƒZƒbƒgƒAƒbƒv‚ÍŠ®—¹‚Å‚·B
 ScaleControl ‚Ì•\î‘€ì‚Åƒ‚ƒfƒ‹‚ðŠg‘åEk¬‚Å‚«‚Ü‚·B
+
+’ˆÓ: Scale_v005/Scale.fx ‚ÍŽg—p‚µ‚Ü‚¹‚ñB
 
 
 ƒ}ƒeƒŠƒAƒ‹‚Ì‰ü‘¢•û–@
@@ -52,12 +56,19 @@ _scale ”Å‚ðì¬‚·‚éŽè‡‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚·B
 ˜A‘±–Ê–ˆ‚É•ª‰ðƒGƒtƒFƒNƒg‚ÌŽg‚¢•û
 --------------------------------
 
-‚Ü‚¸A–{‰Æ‚Ì•ª‰ðƒGƒtƒFƒNƒg‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚ÄA‚»‚Ìà–¾‚É‚µ‚½‚ª‚Á‚Äƒ‚ƒfƒ‹‚ðƒZƒbƒgƒAƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B
-https://www.nicovideo.jp/watch/sm19453784
+‚Ü‚¸Au˜A‘±–Ê–ˆ‚É•ª‰ðƒGƒtƒFƒNƒgvƒtƒHƒ‹ƒ_‚Ì‰º‚Ì ReadMe ‚Ì‚P`‚S‚É‚µ‚½‚ª‚Á‚Äƒ‚ƒfƒ‹‚ðƒZƒbƒgƒAƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B
+‚T”Ô‚Í‚â‚ç‚È‚­‚Ä‚¢‚¢‚Å‚·B
 
-‚ ‚Æ‚Í scale.fx‚Ìê‡‚Æ“¯—l‚Å‚·B
-Main, MaterialMap, SSAOMap, PSSM1`4 ‚Ìƒ^ƒu‚Å•ª‰ðƒGƒtƒFƒNƒg‚ð“K—p‚µ‚½‚¢ƒ‚ƒfƒ‹‚É‘Î‚µ‚Ä "_fracture.fx" ‚ÅI‚í‚éƒGƒtƒFƒNƒg‚ðŠ„‚è“–‚Ä‚Ä‚­‚¾‚³‚¢B
+‚Ü‚½ Ray-MMD ‚à’Êí’Ê‚èƒZƒbƒgƒAƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B
 
+ŽŸ‚ÉAƒTƒCƒY‚ð•ÏX‚µ‚½‚¢ƒ‚ƒfƒ‹‚ÌƒGƒtƒFƒNƒgŠ„‚è“–‚Ä‚ð fracture.fx ‘Î‰ž‚Ì‚à‚Ì‚É•ÏX‚µ‚Ü‚·B
+—á‚¦‚ÎAMaterialMap ƒ^ƒu‚Ì material_2.0.fx ‚Í material_2.0_fracture.fx ‚É•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
+Main ƒ^ƒu‚Ì main.fx ‚Í main_fracture.fx ‚É•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
+“¯—l‚É‚µ‚Ä SSAOMap ‚â PSSM1`4 ‚àŠ„‚è“–‚Ä‚ð•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
+
+‚±‚ê‚ÅƒZƒbƒgƒAƒbƒv‚ÍI‚í‚è‚Å‚·B
+
+¦ "˜A‘±–Ê–ˆ‚É•ª‰ð.fx" ‚ðŠ„‚è“–‚Ä‚é•K—v‚Í‚ ‚è‚Ü‚¹‚ñB
 ¦ –{‰Æ‚Ì•ª‰ðƒGƒtƒFƒNƒg‚É‚Í”j•Ð‚ðƒtƒF[ƒhƒAƒEƒg‚³‚¹‚é‹@”\‚ª‚ ‚è‚Ü‚·‚ªA‚±‚ÌƒGƒtƒFƒNƒg‚Å‚Í‘Î‰ž‚µ‚Ä‚¢‚Ü‚¹‚ñB
 
 
@@ -85,6 +96,9 @@ Ray-MMD –{‘Ì‚¨‚æ‚ÑŽ„‚ªC³‚µ‚½•”•ª‚ÉŠÖ‚µ‚Ä‚Í MIT License ‚Ì‰º‚É”z•z‚³‚ê‚Ä‚¢‚Ü‚·
 XV—š—ð
 -------
 
+* 2019-12-15 rev.4
+    * ˜A‘±–Ê–ˆ‚É•ª‰ðƒGƒtƒFƒNƒg‚ð“¯«‚µ‚Ü‚µ‚½B
+    * Fracture.fx ‚ÉŒy”÷‚ÈC³‚ðs‚¢‚Ü‚µ‚½B‚±‚ê‚ÍƒŒƒ“ƒ_ƒŠƒ“ƒOŒ‹‰Ê‚ð‰e‹¿‚ð—^‚¦‚Ü‚¹‚ñB
 * 2019-12-08 rev.3
     * •ª‰ðƒGƒtƒFƒNƒg‚Å–@üƒxƒNƒgƒ‹‚ª³‚µ‚­ŒvŽZ‚³‚ê‚È‚¢ƒoƒO‚ðC³‚µ‚Ü‚µ‚½B
 * 2019-12-07 rev.2
