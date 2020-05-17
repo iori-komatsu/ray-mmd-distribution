@@ -1,24 +1,24 @@
 ====================================
-   Scale.fx ‘Î‰”Å Ray-MMD (rev.4)
+   Scale.fx ‘Î‰”Å Ray-MMD (rev.5)
 
         by iori_komatsu
 ====================================
 
-Scale.fx ‚Ì‹@”\‚ğ‘g‚İ‚ñ‚¾ Ray-MMD ‚Å‚·B
-ScaleControl ‚ğg‚Á‚Äƒ‚ƒfƒ‹‚ğŠg‘åEk¬‚Å‚«‚Ü‚·B
+‚±‚ê‚Í Ray-MMD ‚É‘Î‚µ‚ÄˆÈ‰º‚ÌƒGƒtƒFƒNƒg‚ğ’Ç‰Á‚µ‚½‚à‚Ì‚Å‚·B
 
-‚±‚ÌƒGƒtƒFƒNƒg‚ÍˆÈ‰º‚Ì‚Q‚Â‚ÌƒGƒtƒFƒNƒg‚ğ iori_komatsu ‚ª•ÏX‚¨‚æ‚ÑÄ”z•z‚µ‚½‚à‚Ì‚Å‚·B
+* Scale
+    * j‹àP‚Ì Scale.fx ‚ğ Ray-MMD ‚É‘Î‰‚³‚¹‚½‚à‚Ì‚Å‚·B
+    * ScaleControl ‚ğg‚Á‚Äƒ‚ƒfƒ‹‚ğŠg‘åEk¬‚Å‚«‚Ü‚·B
+* Fracture
+    * ‚í‚½‚è‚Æ‚Ç‚é‚éP‚Ìu˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒgv‚ğ Ray-MMD ‚É‘Î‰‚³‚¹‚½‚à‚Ì‚Å‚·B
+    * ˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒg‚Æ‚ÍAˆÈ‰º‚Ì“®‰æ‚ÅĞ‰î‚³‚ê‚Ä‚¢‚éƒGƒtƒFƒNƒg‚Å‚·B
+      https://www.nicovideo.jp/watch/sm19453784
+* VolumeticCloud
+    * ‰_ƒIƒuƒWƒFƒNƒg‚ğ”z’u‚Å‚«‚éƒGƒtƒFƒNƒg‚Å‚·B
 
-* Ray-MMD (by Ray-MMD Developers): https://github.com/ray-cast/ray-mmd
-* Scale.fx (by j‹àP): https://harigane.at.webry.info/201010/article_1.html
 
-‚Ü‚½Arev.2 ‚©‚ç‚ÍA‚í‚½‚è‚Æ‚Ç‚é‚éP‚Ìu˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒgv‚ª“®ì‚·‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚Ü‚·B
-˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒg‚Æ‚ÍAˆÈ‰º‚Ì“®‰æ‚ÅĞ‰î‚³‚ê‚Ä‚¢‚éƒGƒtƒFƒNƒg‚Å‚·B
-https://www.nicovideo.jp/watch/sm19453784
-
-
-g‚¢•û
-------
+[Scale] ScaleƒGƒtƒFƒNƒg‚Ìg‚¢•û
+-------------------------------
 
 ‚Ü‚¸A•’Ê‚É Ray-MMD ‚ğƒZƒbƒgƒAƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B
 
@@ -33,8 +33,8 @@ ScaleControl ‚Ì•\î‘€ì‚Åƒ‚ƒfƒ‹‚ğŠg‘åEk¬‚Å‚«‚Ü‚·B
 ’ˆÓ: Scale_v005/Scale.fx ‚Íg—p‚µ‚Ü‚¹‚ñB
 
 
-ƒ}ƒeƒŠƒAƒ‹‚Ì‰ü‘¢•û–@
---------------------
+[Scale] ƒ}ƒeƒŠƒAƒ‹‚Ì‰ü‘¢•û–@
+----------------------------
 
 Ray-MMD ‚Æˆê‚É”z•z‚³‚ê‚Ä‚¢‚éƒ}ƒeƒŠƒAƒ‹‚ÉŠÖ‚µ‚Ä‚Í _scale ”Å‚ª—\‚ß—pˆÓ‚³‚ê‚Ä‚¢‚Ü‚·B
 ‚µ‚©‚µA‚»‚êˆÈŠO‚ÌƒGƒtƒFƒNƒg‚ÉŠÖ‚µ‚Ä‚Í—˜—pÒ‚ª _scale ”Å‚ğì¬‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
@@ -44,17 +44,17 @@ _scale ”Å‚ğì¬‚·‚éè‡‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚·B
 2. ƒRƒs[‚µ‚½ƒtƒ@ƒCƒ‹‚Ìæ“ª‚ÉˆÈ‰º‚Ì‚Qs‚ğ‘‚«‰Á‚¦‚Ä•Û‘¶‚µ‚Ü‚·B
    ‚½‚¾‚µ (Scale.fxsub‚Ö‚Ì‘Š‘ÎƒpƒX) ‚Ì•”•ª‚Í‚»‚Ì .fx ƒtƒ@ƒCƒ‹‚©‚ç Shader/Scale.fxsub ‚Ö‚Ì‘Š‘ÎƒpƒX‚É’u‚«Š·‚¦‚Ä‚­‚¾‚³‚¢B
 
-#include "(Scale.fxsub‚Ö‚Ì‘Š‘ÎƒpƒX)"
-#define SCALING_ENABLED 1
+    #include "(Scale.fxsub‚Ö‚Ì‘Š‘ÎƒpƒX)"
+    #define SCALING_ENABLED 1
 
 —á‚¦‚ÎAŒ³‚Ìƒ}ƒeƒŠƒAƒ‹‚ÌƒpƒX‚ª (ray-mmd‚ÌƒfƒBƒŒƒNƒgƒŠ)/Materials/Hair/material_hair.fx ‚¾‚Æ‚·‚é‚ÆA’Ç‰Á‚·‚×‚«‚Qs‚ÍˆÈ‰º‚Ì‚æ‚¤‚É‚È‚è‚Ü‚·B
 
-#include "../../shader/Scale.fxsub"
-#define SCALING_ENABLED 1
+    #include "../../shader/Scale.fxsub"
+    #define SCALING_ENABLED 1
 
 
-˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒg‚Ìg‚¢•û
---------------------------------
+[Fracture] ˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒg‚Ìg‚¢•û
+-------------------------------------------
 
 ‚Ü‚¸Au˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒgvƒtƒHƒ‹ƒ_‚Ì‰º‚Ì ReadMe ‚Ì‚P`‚S‚É‚µ‚½‚ª‚Á‚Äƒ‚ƒfƒ‹‚ğƒZƒbƒgƒAƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B
 ‚T”Ô‚Í‚â‚ç‚È‚­‚Ä‚¢‚¢‚Å‚·B
@@ -72,8 +72,8 @@ Main ƒ^ƒu‚Ì main.fx ‚Í main_fracture.fx ‚É•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
 ¦ –{‰Æ‚Ì•ª‰ğƒGƒtƒFƒNƒg‚É‚Í”j•Ğ‚ğƒtƒF[ƒhƒAƒEƒg‚³‚¹‚é‹@”\‚ª‚ ‚è‚Ü‚·‚ªA‚±‚ÌƒGƒtƒFƒNƒg‚Å‚Í‘Î‰‚µ‚Ä‚¢‚Ü‚¹‚ñB
 
 
-•ª‰ğƒGƒtƒFƒNƒg—pƒ}ƒeƒŠƒAƒ‹‚Ìì‚è•û
-----------------------------------
+[Fracture] •ª‰ğƒGƒtƒFƒNƒg—pƒ}ƒeƒŠƒAƒ‹‚Ìì‚è•û
+---------------------------------------------
 
 _fracture ”Å‚Ìƒ}ƒeƒŠƒAƒ‹‚ÍÅ‚àŠî–{‚Æ‚È‚é material_2.0_fracture.fx ‚¾‚¯‚ª—pˆÓ‚³‚ê‚Ä‚¢‚Ü‚·B
 ‚±‚êˆÈŠO‚Ìƒ}ƒeƒŠƒAƒ‹‚ğ—˜—p‚µ‚½‚¢ê‡‚Í _fracture ”Åƒ}ƒeƒŠƒAƒ‹‚ğ©•ª‚Åì¬‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
@@ -83,12 +83,29 @@ _fracture ”Å‚Ìƒ}ƒeƒŠƒAƒ‹‚ÍÅ‚àŠî–{‚Æ‚È‚é material_2.0_fracture.fx ‚¾‚¯‚ª—pˆÓ‚³‚ê
 2. ƒRƒs[‚µ‚½ƒtƒ@ƒCƒ‹‚Ìæ“ª‚ÉˆÈ‰º‚Ì‚Qs‚ğ‘‚«‰Á‚¦‚Ä•Û‘¶‚µ‚Ü‚·B
    ‚½‚¾‚µ (Fracture.fxsub‚Ö‚Ì‘Š‘ÎƒpƒX) ‚Ì•”•ª‚Í‚»‚Ì .fx ƒtƒ@ƒCƒ‹‚©‚ç Shader/Fracture.fxsub ‚Ö‚Ì‘Š‘ÎƒpƒX‚É’u‚«Š·‚¦‚Ä‚­‚¾‚³‚¢B
 
-#include "(Fracture.fxsub‚Ö‚Ì‘Š‘ÎƒpƒX)"
-#define FRACTURE_ENABLED 1
+    #include "(Fracture.fxsub‚Ö‚Ì‘Š‘ÎƒpƒX)"
+    #define FRACTURE_ENABLED 1
+
+
+[Cloud] ‰_ƒGƒtƒFƒNƒg‚Ìg‚¢•û
+----------------------------
+
+ray-mmd/Cloud ƒtƒHƒ‹ƒ_‚Ì‰º‚Ì README ‚ğŒä——‚­‚¾‚³‚¢B
+
+
+Copyright
+---------
+
+‚±‚ÌƒGƒtƒFƒNƒg‚ÍˆÈ‰º‚ÌƒGƒtƒFƒNƒg‚ğ‰ü•Ï‚¨‚æ‚ÑÄ”z•z‚µ‚Ä‚¢‚Ü‚·B
+‘f°‚ç‚µ‚¢ƒGƒtƒFƒNƒg‚Ìì¬‚¨‚æ‚ÑÄ”z•z‚Ì‹–‰Â‚ğ‚­‚¾‚³‚Á‚½ìÒ‚Ì•ûX‚ÉŠ´Ó‚¢‚½‚µ‚Ü‚·B
+
+* Ray-MMD (by Rui): https://github.com/ray-cast/ray-mmd
+* Scale.fx (by j‹àP): https://harigane.at.webry.info/201010/article_1.html
+* ˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒg (by ‚í‚½‚è, ‚Ç‚é‚éP): https://www.nicovideo.jp/watch/sm19453784
 
 
 —˜—pğŒ
---------
+-------
 
 Ray-MMD –{‘Ì‚¨‚æ‚Ñ„‚ªC³‚µ‚½•”•ª‚ÉŠÖ‚µ‚Ä‚Í MIT License ‚Ì‰º‚É”z•z‚³‚ê‚Ä‚¢‚Ü‚·B
 
@@ -96,6 +113,8 @@ Ray-MMD –{‘Ì‚¨‚æ‚Ñ„‚ªC³‚µ‚½•”•ª‚ÉŠÖ‚µ‚Ä‚Í MIT License ‚Ì‰º‚É”z•z‚³‚ê‚Ä‚¢‚Ü‚·
 XV—š—ğ
 -------
 
+* 2020-05-18 rev.5
+    * ‰_ƒGƒtƒFƒNƒg‚ğ’Ç‰Á‚µ‚Ü‚µ‚½B
 * 2019-12-15 rev.4
     * ˜A‘±–Ê–ˆ‚É•ª‰ğƒGƒtƒFƒNƒg‚ğ“¯«‚µ‚Ü‚µ‚½B
     * Fracture.fx ‚ÉŒy”÷‚ÈC³‚ğs‚¢‚Ü‚µ‚½B‚±‚ê‚ÍƒŒƒ“ƒ_ƒŠƒ“ƒOŒ‹‰Ê‚ğ‰e‹¿‚ğ—^‚¦‚Ü‚¹‚ñB
