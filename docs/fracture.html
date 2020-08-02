@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fracture ー Scale.fx 対応版 Ray-MMD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+
+<nav><a href="../README.html">トップに戻る</a></nav>
+
+<h1>Fracture</h1>
+
+<p>モデルを分解(あるいは破壊)できるエフェクトです。</p>
+
+<p>このエフェクトで何ができるかは、本家の紹介動画を見るのがわかりやすいです:<br>
+<a href="https://www.nicovideo.jp/watch/sm19453784" target="_blank">https://www.nicovideo.jp/watch/sm19453784</a>
+</p>
+
+<h2>使い方</h2>
+
+<p>まず、「連続面毎に分解エフェクト」フォルダの下の ReadMe の１～４にしたがってモデルをセットアップしてください。
+５番はやらなくていいです。</p>
+
+<p>また Ray-MMD も通常通りセットアップしてください。</p>
+
+<p>次に、サイズを変更したいモデルのエフェクト割り当てを fracture.fx 対応のものに変更します。
+
+<p>例えば、MaterialMap タブの material_2.0.fx は material_2.0_fracture.fx に変更し、Main タブの main.fx は main_fracture.fx に変更してください。
+同様に、SSAOMap や PSSM1～4 も割り当てを変更してください。</p>
+
+<p>これでセットアップは終わりです。</p>
+
+<p>※ "連続面毎に分解.fx" を割り当てる必要はありません。<br>
+※ 本家の分解エフェクトには破片をフェードアウトさせる機能がありますが、このエフェクトでは対応していません。</p>
+
+
+<h2>分解エフェクト用マテリアルの作り方</h2>
+    
+<p>_fracture 版のマテリアルは最も基本となる material_2.0_fracture.fx だけが用意されています。
+これ以外のマテリアルを利用したい場合は _fracture 版マテリアルを自分で作成する必要があります。</p>
+
+<p>作り方は以下の通りです:<p>
+    
+<ol>
+  <li>マテリアルの .fx ファイルをコピーします。</li>
+  <li>
+    <p>コピーしたファイルの先頭に以下の２行を書き加えて保存します。
+    ただし <code class="placeholder">(Fracture.fxsubへの相対パス)</code> の部分はその .fx ファイルから Shader/Fracture.fxsub への相対パスに置き換えてください。</p>
+    
+    <pre>#include "<span class="placeholder">(Fracture.fxsubへの相対パス)</span>"
+#define FRACTURE_ENABLED 1
+</pre>
+  </li>
+</ol>
+
+  </body>
+</html>

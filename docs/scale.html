@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scale ー Scale.fx 対応版 Ray-MMD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+
+<nav><a href="../README.html">トップに戻る</a></nav>
+
+<h1>Scale</h1>
+
+<p>Scale は、モデルのサイズを拡大・縮小することができるエフェクトです。</p>
+
+<h2>使い方</h2>
+
+<p>まず、普通に Ray-MMD をセットアップしてください。</p>
+
+<p>次に、サイズを変更したいモデルのエフェクト割り当てを scale.fx 対応のものに変更します。</p>
+
+<p>例えば、MaterialMap タブの material_2.0.fx は material_2.0_scale.fx に変更し、
+Main タブの main.fx は main_scale.fx に変更してください。
+同様に、SSAOMap や PSSM1～4 も割り当てを変更してください。</p>
+    
+<p>最後に Scale_v005/ScaleControl.pmd をMMDに読み込めばセットアップは完了です。
+ScaleControl の表情操作でモデルを拡大・縮小できます。</p>
+    
+<p><strong>注意:</strong> Scale_v005/Scale.fx は使用しません。</p>
+
+
+<h2>マテリアルの改造方法</h2>
+
+<p>Ray-MMD と一緒に配布されているマテリアルに関しては _scale 版が予め用意されています。
+しかし、それ以外のエフェクトに関しては利用者が _scale 版を作成する必要があります。
+_scale 版を作成する手順は以下の通りです。</p>
+
+<ol>
+  <li>マテリアルの .fx ファイルをコピーします。</li>
+  <li>
+    <p>コピーしたファイルの先頭に以下の２行を書き加えて保存します。
+    ただし <code class="placeholder">(Scale.fxsubへの相対パス)</code> の部分はその .fx ファイルから Shader/Scale.fxsub への相対パスに置き換えてください。</p>
+
+    <pre>#include "<span class="placeholder">(Scale.fxsubへの相対パス)</span>"
+#define SCALING_ENABLED 1
+</pre>
+
+    <p>例えば、元のマテリアルのパスが <code>(ray-mmdのディレクトリ)/Materials/Hair/material_hair.fx</code> だとすると、追加すべき２行は以下のようになります。</p>
+
+    <pre>#include "../../shader/Scale.fxsub"
+#define SCALING_ENABLED 1
+</pre>
+  </li>
+</ol>
+
+  </body>
+</html>

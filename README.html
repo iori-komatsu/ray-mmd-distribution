@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scale.fx 対応版 Ray-MMD</title>
+    <link rel="stylesheet" type="text/css" href="./docs/style.css">
+  </head>
+  <body>
+
+<div class="heading">
+  <h1>Scale.fx 対応版 Ray-MMD (rev.5)</h1>
+  <p><em>by Iori Komatsu (<a href="https://twitter.com/iori_komatsu" target="_blank">@iori_komatsu</a>)</em></p>
+</div>
+
+<p>これは Ray-MMD に対して以下のエフェクトを追加したものです。</p>
+
+<dl>
+  <dt>Scale<dt>
+  <dd>
+    針金P氏の Scale.fx を Ray-MMD に対応させたものです。
+    ScaleControl を使ってモデルを拡大・縮小できます。
+  </dd>
+
+  <dt>Fracture</dt>
+  <dd>
+    わたり氏とどるるP氏の「連続面毎に分解エフェクト」を Ray-MMD に対応させたものです。
+    連続面毎に分解エフェクトとは、以下の動画で紹介されているエフェクトです:<br>
+    <a href="https://www.nicovideo.jp/watch/sm19453784" target="_blank">https://www.nicovideo.jp/watch/sm19453784</a>
+  </dd>
+
+  <dt>VolumeticCloud</dt>
+  <dd>
+    雲オブジェクトを配置できるエフェクトです。
+  </dd>
+</dl>
+
+<h2>使い方</h2>
+
+<ul>
+  <li><a href="./docs/scale.html">Scaleの使い方</a></li>
+  <li><a href="./docs/fracture.html">Fractureの使い方</a></li>
+  <li><a href="./docs/cloud.html">VolumeticCloudの使い方</a></li>
+</ul>
+
+<h2>Copyright</h2>
+
+<p>このエフェクトは以下のエフェクトを改変および再配布しています。
+素晴らしいエフェクトの作成および再配布の許可をくださった作者の方々に感謝いたします。</p>
+
+<ul>
+  <li><a href="https://github.com/ray-cast/ray-mmd" target="_blank">Ray-MMD (by Rui氏)</a></li>
+  <li><a href="https://harigane.at.webry.info/201010/article_1.html" target="_blank">Scale.fx (by 針金P氏)</a></li>
+  <li><a href="https://www.nicovideo.jp/watch/sm19453784" target="_blank">連続面毎に分解エフェクト (by わたり氏, どるるP氏)</a></li>
+</ul>
+
+<h2>利用条件</h2>
+
+<p>Ray-MMD 本体および私が修正した部分に関しては MIT License の下に配布されています。</p>
+
+<h2>更新履歴</h2>
+
+<dl>
+  <dt>2020-05-18 rev.5</dt>
+  <dd>雲エフェクトを追加しました。</dd>
+
+  <dt>2019-12-15 rev.4</dt>
+  <dd>連続面毎に分解エフェクトを同梱しました。<br>
+  Fracture.fx に軽微な修正を行いました。これはレンダリング結果を影響を与えません。</dd>
+
+  <dt>2019-12-08 rev.3</dt>
+  <dd>分解エフェクトで法線ベクトルが正しく計算されないバグを修正しました。</dd>
+
+  <dt>2019-12-07 rev.2</dt>
+  <dd>分解エフェクトの機能を実装しました。<br>
+  同梱する ray-mmd のバージョンを master ブランチの最新版にしました。<br>
+  Extensions を同梱するようにしました。</dd>
+
+  <dt>2019-11-10 rev.1</dt>
+  <dd>公開</dd>
+</dl>
+
+  </body>
+</html>

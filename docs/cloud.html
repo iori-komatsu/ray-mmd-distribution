@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>VolumeticCloud ー Scale.fx 対応版 Ray-MMD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+
+<nav><a href="../README.html">トップに戻る</a></nav>
+
+<h1>VolumeticCloud</h1>
+
+雲です。サイズや密度や色を操作できます。
+
+<h2>使い方</h2>
+
+VolumeticCloud.pmx をロードしてください。
+
+
+<h2>パラメータの説明</h2>
+
+<dl>
+  <dt>Position<dt>
+  <dd>雲の中心座標と回転を指定します。</dd>
+
+  <dt>Size</dt>
+  <dd>雲のサイズを大きくしたり小さくしたりします。
+  サイズを大きくするとパターンが相対的に小さくなってしまうので PatternScale も増やして調整してください。</dd>
+
+  <dt>PatternScale</dt>
+  <dd>雲のパターン(濃淡)のスケールを変更します。
+  X座標の値のみが意味を持ちます。</dd>
+
+  <dt>Cutoff</dt>
+  <dd>雲が存在しない領域の割合を調整します。</dd>
+
+  <dt>Density</dt>
+  <dd>雲の密度を調整します。</dd>
+
+  <dt>Brightness</dt>
+  <dd>雲の明るさを調整します。
+  より正確に言うとガンマ補正をかけます。
+  色が薄いな～と思うときは Brightness を上げてください。</dd>
+
+  <dt>H</dt>
+  <dd>雲の色相を変更します。
+  S がゼロだと変化が見えないので先に H を弄るなら先に S を増やしたほうがいいです。</dd>
+
+  <dt>S</dt>
+  <dd>雲の彩度を変更します。</dd>
+
+  <dt>V</dt>
+  <dd>雲の明度を変更します。</dd>
+</dl>
+
+
+<h2>軽量版</h2>
+
+<p>VolumeticCloud の動作が重たい人のために軽量版を用意しています。
+作業中は軽量版を使っておいて録画するときは通常版を使うといった使い分けができます。</p>
+
+<p>軽量版を使うには、VolumeticCloud.pmx をロードした後に以下の手順を行ってください。</p>
+
+<ol>
+  <li>エフェクト割当を開く</li>
+  <li>CloudMap の VolumeticCloud.pmx をダブルクリックして "volumetic_cloud_low_quality.fx" を選択する</li>
+</ol>
+
+<p>軽量版から通常版に戻したいときは 2 番の手順のところで "volumetic_cloud.fx" を選択してください。</p>
+
+  </body>
+</html>
+
