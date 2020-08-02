@@ -32,3 +32,12 @@ nav {
     margin-top: 3em;
     margin-bottom: 3em;
 }
+
+.breaking-change {
+    color: #C01010;
+}
+
+.notice {
+    background-color: #E0E070;
+    padding: 1em;
+}

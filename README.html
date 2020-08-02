@@ -8,7 +8,7 @@
   <body>
 
 <div class="heading">
-  <h1>Scale.fx 対応版 Ray-MMD (rev.5)</h1>
+  <h1>Scale.fx 対応版 Ray-MMD (rev.6)</h1>
   <p><em>by Iori Komatsu (<a href="https://twitter.com/iori_komatsu" target="_blank">@iori_komatsu</a>)</em></p>
 </div>
 
@@ -32,17 +32,24 @@
   <dd>
     雲オブジェクトを配置できるエフェクトです。
   </dd>
+
+  <dt>アクセサリ対応</dt>
+  <dd>
+    Ray-MMD でアクセサリを使えるようにする対応を試験的に入れています。
+    この機能はまだベータ版であるため、予告なしに変更または削除される場合があります。
+  </dd>
 </dl>
 
-<h2>使い方</h2>
+<h2 id="how_to_use">使い方</h2>
 
 <ul>
   <li><a href="./docs/scale.html">Scaleの使い方</a></li>
   <li><a href="./docs/fracture.html">Fractureの使い方</a></li>
   <li><a href="./docs/cloud.html">VolumeticCloudの使い方</a></li>
+  <li><a href="./docs/accessary.html">アクセサリの使い方</a></li>
 </ul>
 
-<h2>Copyright</h2>
+<h2 id="copyright">Copyright</h2>
 
 <p>このエフェクトは以下のエフェクトを改変および再配布しています。
 素晴らしいエフェクトの作成および再配布の許可をくださった作者の方々に感謝いたします。</p>
@@ -53,13 +60,19 @@
   <li><a href="https://www.nicovideo.jp/watch/sm19453784" target="_blank">連続面毎に分解エフェクト (by わたり氏, どるるP氏)</a></li>
 </ul>
 
-<h2>利用条件</h2>
+<h2 id="license">利用条件</h2>
 
 <p>Ray-MMD 本体および私が修正した部分に関しては MIT License の下に配布されています。</p>
 
-<h2>更新履歴</h2>
+<h2 id="history">更新履歴</h2>
 
 <dl>
+  <dt>2020-08-02 rev.6</dt>
+  <dd><strong class="breaking-change">[非互換変更] Fractureの時間の単位を変更しました。</strong><br>
+  FractureControlを追加しました。<br>
+  試験的に、アクセサリを使えるようにする対応を入れました。</span>
+  </dd>
+
   <dt>2020-05-18 rev.5</dt>
   <dd>雲エフェクトを追加しました。</dd>
 

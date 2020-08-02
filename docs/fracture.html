@@ -11,13 +11,20 @@
 
 <h1>Fracture</h1>
 
+<div class="notice">
+  <strong>注意:</strong>
+  rev.6 で Fracture に非互換変更が入りました。
+  rev.5 以前の Fracture で作ったモーションは rev.6 以降では正しく動きません。
+  <a href="#change_time_unit">「時間の単位を変更する」</a>の手順にしたがって移行作業をお願いします。
+</div>
+
 <p>モデルを分解(あるいは破壊)できるエフェクトです。</p>
 
 <p>このエフェクトで何ができるかは、本家の紹介動画を見るのがわかりやすいです:<br>
 <a href="https://www.nicovideo.jp/watch/sm19453784" target="_blank">https://www.nicovideo.jp/watch/sm19453784</a>
 </p>
 
-<h2>使い方</h2>
+<h2 id="how_to_use">使い方</h2>
 
 <p>まず、「連続面毎に分解エフェクト」フォルダの下の ReadMe の１～４にしたがってモデルをセットアップしてください。
 ５番はやらなくていいです。</p>
@@ -35,7 +42,7 @@
 ※ 本家の分解エフェクトには破片をフェードアウトさせる機能がありますが、このエフェクトでは対応していません。</p>
 
 
-<h2>分解エフェクト用マテリアルの作り方</h2>
+<h2 id="how_to_make_materials_for_fracture">分解エフェクト用マテリアルの作り方</h2>
     
 <p>_fracture 版のマテリアルは最も基本となる material_2.0_fracture.fx だけが用意されています。
 これ以外のマテリアルを利用したい場合は _fracture 版マテリアルを自分で作成する必要があります。</p>
@@ -53,6 +60,21 @@
 </pre>
   </li>
 </ol>
+
+
+<h2 id="change_time_unit">時間の単位を変更する</h2>
+
+<p>Fracture の時間の単位は rev.6 でフレームから秒に変更されました。
+このため、<strong>rev.5 以前のバージョンで作られた分解モーションは、rev.6 以降では正しく動きません。</strong></p>
+
+<p>これを修正するには、以下の手順を行ってください。</p>
+
+<ol>
+  <li>Extension/Fracture の下にある FractureController.pmx をMMDに読み込んでください。</li>
+  <li>FractureController の TimeUnitPerFrame のX座標を <strong>1</strong> にしてください。</li>
+</ol>
+
+<p>これによって、Fractureの動作が rev.5 以前と全く同じになります。</p>
 
   </body>
 </html>

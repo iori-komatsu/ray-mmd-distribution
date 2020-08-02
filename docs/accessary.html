@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>アクセサリ ー Scale.fx 対応版 Ray-MMD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+
+<nav><a href="../README.html">トップに戻る</a></nav>
+
+<h1>アクセサリ対応</h1>
+
+<p>Ray-MMD では通常アクセサリは利用できませんが、それを利用可能にする対応を入れています。</p>
+
+<p><storng>注意:</strong> この機能はまだベータ版であるため、予告なしに変更または削除される場合があります。ご利用の際は十分に注意してください。</p>
+
+<h2 id="how_to_use">使い方</h2>
+
+<ol>
+  <li>アクセサリを通常のMMDの手順で読み込む</li>
+  <li>エフェクト割り当てを開き、以下を行う
+    <ol>
+      <li>Mainタブで、読み込んだアクセサリに Main/main.fx を割り当てる</li>
+      <li>MaterialMapタブで、読み込んだアクセサリに Materials/material_2.0.fx を割り当てる</li>
+      <li>PSSM1～4タブで、読み込んだアクセサリに Shadow/PSSM1～4.fx を割り当てる</li>
+    </ol>
+  </li>
+  <li>[背景]→[アクセサリ編集] で読み込んだアクセサリを ray.x より上に持ってくる</li>
+</ol>
+
+<h2 id="difference">普通の Ray-MMD との違い</h2>
+
+<p>普通の Ray-MMD で上記の手順を行ってアクセサリを配置した場合、影の描画が正しく行えませんでした。
+この修正版 Ray-MMD では、影の描画の問題を修正しています。</p>
+
+  </body>
+</html>
+
