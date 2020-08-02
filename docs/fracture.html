@@ -15,7 +15,7 @@
   <strong>注意:</strong>
   rev.6 で Fracture に非互換変更が入りました。
   rev.5 以前の Fracture で作ったモーションは rev.6 以降では正しく動きません。
-  <a href="#change_time_unit">「時間の単位を変更する」</a>の手順にしたがって移行作業をお願いします。
+  <a href="#restore_rev5_behavior">「rev.5 の挙動に戻す」</a>の手順にしたがって移行作業をお願いします。
 </div>
 
 <p>モデルを分解(あるいは破壊)できるエフェクトです。</p>
@@ -62,19 +62,20 @@
 </ol>
 
 
-<h2 id="change_time_unit">時間の単位を変更する</h2>
+<h2 id="restore_rev5_behavior">rev.5 の挙動に戻す</h2>
 
-<p>Fracture の時間の単位は rev.6 でフレームから秒に変更されました。
+<p>Fracture の挙動を本家エフェクトの挙動に近づけるために、rev.6 では時間の単位の修正と衝撃速度の係数の変更を行いました。
 このため、<strong>rev.5 以前のバージョンで作られた分解モーションは、rev.6 以降では正しく動きません。</strong></p>
 
 <p>これを修正するには、以下の手順を行ってください。</p>
 
 <ol>
-  <li>Extension/Fracture の下にある FractureController.pmx をMMDに読み込んでください。</li>
-  <li>FractureController の TimeUnitPerFrame のX座標を <strong>1</strong> にしてください。</li>
+  <li>Extension/Fracture の下にある FractureController.pmx をMMDに読み込む。</li>
+  <li>FractureController の TimeUnitPerFrame のX座標を <strong>1</strong> に設定して登録する。</li>
+  <li>FractureController の SpreadFactor のX座標を <strong>1</strong> に設定して登録する。</li>
 </ol>
 
-<p>これによって、Fractureの動作が rev.5 以前と全く同じになります。</p>
+<p>これにより Fracture の挙動が rev.5 と全く同じになります。</p>
 
   </body>
 </html>
