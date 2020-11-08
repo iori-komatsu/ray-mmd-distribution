@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gatagata ー Scale.fx 対応版 Ray-MMD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+
+<nav><a href="../README.html">トップに戻る</a></nav>
+
+<h1>ガタガタエフェクト</h1>
+
+<p>モデルをガタガタにします。街モデルに適用すると破壊された街っぽくすることもできます。</p>
+
+<h2 id="how_to_use">使い方</h2>
+
+<ol>
+  <li>エフェクト割当で、ガタガタさせたいモデルに対して以下を行います:
+    <ol>
+      <li>Mainタブで Main/main_gatagata.fx を割り当てる</li>
+      <li>Materialタブで Materials/material_2.0_gatagata.fx を割り当てる</li>
+      <li>SSAOマップで Shadow/SSAO visibility 1.0_gatagata.fx を割り当てる</li>
+      <li>PSSM1～4で Shadow/PSSM<var>n</var>_gatagata.fx を割り当てる (<var>n</var> の部分は1～4に適宜置き換えてください)</li>
+    </ol>
+  </li>
+  <li>Extension/Gatagata/GatagataController.pmx を MMD に読み込みます。</li>
+  <li>GatagataController のボーンに PerturbWidth というものがあるので、そのX座標を動かしてみてください。モデルがガタガタになります。</li>
+</ol>
+
+<h2 id="parameters">パラメータ</h2>
+
+このエフェクトが実際にやっているのは以下の３つです。
+
+<ul>
+  <li><strong>Perturb:</strong> モデルの頂点をランダムにずらす</li>
+  <li><strong>YCompression:</strong> モデルをY方向に圧縮する</li>
+  <li><strong>Distortion:</strong> モデルの法線ベクトルをランダムに歪める</li>
+</ul>
+
+これら3つの効果を GatagataController のボーンと表情操作を使って調整することができます。
+
+<dl>
+  <dt>PerturbWidth</dt>
+  <dd>モデルの頂点のずれの大きさです (※ PerturbWidth は表情操作ではなくてボーンの方にあります)</dd>
+
+  <dt>PerturbPeriod</dt>
+  <dd>モデルの頂点のずれの変化の激しさを決めます。(といってもイメージわかないと思うので実際に PerturbPeriod+ をいじってみるといいかも)</dd>
+
+  <dt>YCompression</dt>
+  <dd>モデルがY方向にどれぐらい圧縮されるかを決めます。YCompression- を 1.0 にすると全く圧縮されなくなります。</dd>
+
+  <dt>YVariance</dt>
+  <dd>圧縮率がどれぐらいの範囲でばらつくかを決めます。YVariance- を 1.0 にすると全くばらつきません。</dd>
+
+  <dt>DistortionPeriod</dt>
+  <dd>法線ベクトルの歪みの変化の激しさを決めます。これも試してみると何が起こるかわかるかと思います。</dd>
+
+  <dt>DistortionAngle</dt>
+  <dd>法線ベクトルがどれぐらい歪むかを決めます。</dd>
+</dl>
+
+※ アニメーション制作時などで「ガタガタしていない状態のモデル」が必要な場合は PerturbWidth = 0.0, YCompression- = 1.0, DistortionAngle- = 1.0 に設定してください。
+
+  </body>
+</html>
